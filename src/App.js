@@ -36,6 +36,16 @@ function App() {
         setcountry(countries[index].key);
         // color green
         countries[index].bg = "green";
+        capital.map((item) => {
+          if (item.bg === "red") {
+            item.bg = "";
+          }
+        });
+        countries.map((item) => {
+          if (item.bg === "red") {
+            item.bg = "";
+          }
+        });
       }
     }
     if (capitalc === null) {
@@ -43,6 +53,16 @@ function App() {
         setcapitalc(capital[index].value);
         // color green
         capital[index].bg = "green";
+        capital.map((item) => {
+          if (item.bg === "red") {
+            item.bg = "";
+          }
+        });
+        countries.map((item) => {
+          if (item.bg === "red") {
+            item.bg = "";
+          }
+        });
       }
     }
 
